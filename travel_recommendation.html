@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mia-vita-travels- Explore Dream Destinations</title>
+  <link rel="stylesheet" href="./travel_recommendation.css">
+  <!-- Font Awesome for Social Media Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-logo">
+      <i class="fa-solid fa-plane-departure"></i>
+      <h2>Mia Vita Travel</h2>
+    </div>
+    
+    <ul class="nav-links">
+      <li><a href="./travel_recommendation.html" id="home">Home</a></li>
+      <li><a href="./about_us.html" id="about">About Us</a></li>
+      <li><a href="./contact_us.html" id="contact">Contact Us</a></li>
+    </ul>
+
+    <!-- Search Section (Task 2 & 7) -->
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Enter a destination or keyword (e.g. beach, temple, country)">
+      <button id="btnSearch" onclick="searchCondition()">Search</button>
+      <button id="btnClear" onclick="resetForm()">Clear</button>
+    </div>
+  </nav>
+
+  <!-- Main Hero Section (Task 3) -->
+  <main class="hero-section">
+    <!-- Social Media Links Container -->
+    <div class="social-sidebar">
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+
+    <!-- Content Introduction Overlay -->
+    <div class="content-box">
+      <h1>EXPLORE<br>DREAM<br>DESTINATION</h1>
+      <p>
+        The Travel Recommendation App helps users explore popular travel destinations through an interactive and user-friendly interface. It allows users to search for beaches, temples, or specific countries, viewing detailed descriptions along with photos to discover and plan their next dream getaway!
+      </p>
+      <button class="btn-book" onclick="alert('Booking feature coming soon!')">Book Now</button>
+    </div>
+
+    <!-- Recommendation Results Container (Task 6) -->
+    <div id="results-container" class="results-container"></div>
+  </main>
+
+  <script src="./travel_recommendation.js"></script>
+</body>
+</html>
